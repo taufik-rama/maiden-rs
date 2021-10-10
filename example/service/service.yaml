@@ -1,0 +1,11 @@
+service:
+  http:
+    "a":
+      endpoints:
+        "/other":
+          - method: PUT
+            request: ""
+            response_file: response_file_1.json
+          - method: DELETE
+            request: ""
+            response_file: response_file_2.json

@@ -1,0 +1,26 @@
+imports:
+  - fixture/fixture.yaml
+  - service/service.yaml
+
+service:
+  http:
+    "a":
+      port: 8080
+      endpoints:
+        "/":
+          - method: GET
+            request: ""
+            response_file: response_file_1.json
+          - method: POST
+            request: ""
+            response_file: response_file_2.json
+    "b":
+      port: 8090
+      endpoints:
+        "/":
+          - method: GET
+            request: ""
+            response_file: response_file_1.json
+          - method: POST
+            request: ""
+            response_file: response_file_2.json
